@@ -1,6 +1,6 @@
 import express, { Request, Response } from "express";
-import AuthorController from "./author.controller";
-import { protect } from "../authentication/auth.middleware";
+import AuthorController from "../../../src/module/authors/author.controller";
+import { protect } from "../../../src/module/authentication/auth.middleware";
 
 const router = express.Router();
 const authorController = new AuthorController();

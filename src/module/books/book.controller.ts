@@ -1,7 +1,10 @@
 import { Request, Response } from "express";
-import Book from "../books/book.model";
-import { bookSchema, updateBookSchema } from "./book.validation";
-import { createBook, updateBook } from "./book.service";
+import Book from "../../../src/module/books/book.model";
+import {
+  bookSchema,
+  updateBookSchema,
+} from "../../../src/module/books/book.validation";
+import { createBook, updateBook } from "../../../src/module/books/book.service";
 
 class BookController {
   async addBook(req: Request, res: Response): Promise<Response> {

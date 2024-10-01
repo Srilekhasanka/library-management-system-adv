@@ -1,7 +1,7 @@
 import express from "express";
 
-import BookController from "./book.controller";
-import { protect } from "../authentication/auth.middleware";
+import BookController from "../../../src/module/books/book.controller";
+import { protect } from "../../../src/module/authentication/auth.middleware";
 
 const router = express.Router();
 const bookController = new BookController();

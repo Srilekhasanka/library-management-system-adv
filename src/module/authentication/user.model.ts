@@ -1,6 +1,6 @@
 import { DataTypes, Model, Optional } from "sequelize";
 import bcrypt from "bcryptjs";
-import sequelize from "../../config/db";
+import sequelize from "../../../src/config/db";
 import Joi from "joi";
 
 // Define the User attributes

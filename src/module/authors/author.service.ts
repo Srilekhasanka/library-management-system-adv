@@ -1,4 +1,4 @@
-import Authors from "./author.model";
+import Authors from "../../../src/module/authors/author.model";
 
 // Define the shape of the author data
 interface AuthorData {

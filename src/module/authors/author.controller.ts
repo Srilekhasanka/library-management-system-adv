@@ -1,7 +1,13 @@
 import { Request, Response } from "express";
-import Authors from "../authors/author.model";
-import { authorSchema, updateAuthorSchema } from "./author.validation";
-import { createAuthor, updateAuthor } from "./author.service";
+import Authors from "../../../src/module/authors/author.model";
+import {
+  authorSchema,
+  updateAuthorSchema,
+} from "../../../src/module/authors/author.validation";
+import {
+  createAuthor,
+  updateAuthor,
+} from "../../../src/module/authors/author.service";
 
 class AuthorController {
   // Method to add an author

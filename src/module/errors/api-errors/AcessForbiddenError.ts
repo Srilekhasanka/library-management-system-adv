@@ -1,4 +1,4 @@
-import { CustomApiError } from "./CustomApiError";
+import { CustomApiError } from "../api-errors/CustomApiError";
 
 class AccessForbiddenError extends CustomApiError {
   public statusCode: number;

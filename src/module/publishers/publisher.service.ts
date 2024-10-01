@@ -1,4 +1,4 @@
-import Publisher from "../publishers/publisher.model";
+import Publisher from "../../../src/module/publishers/publisher.model";
 
 // Define the shape of publisher data
 interface PublisherData {

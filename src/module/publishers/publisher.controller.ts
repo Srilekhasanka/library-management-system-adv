@@ -1,10 +1,13 @@
 import { Request, Response } from "express";
-import Publisher from "../publishers/publisher.model";
-import { publisherSchema, updatePublisherSchema } from "./publisher.validation";
+import Publisher from "../../../src/module/publishers/publisher.model";
+import {
+  publisherSchema,
+  updatePublisherSchema,
+} from "../../../src/module/publishers/publisher.validation";
 import {
   createPublisher,
   updatePublisher,
-} from "../publishers/publisher.service";
+} from "../../../src/module/publishers/publisher.service";
 
 class PublisherController {
   async addPublisher(req: Request, res: Response): Promise<Response> {

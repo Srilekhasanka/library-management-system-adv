@@ -1,10 +1,10 @@
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
 import nodemailer from "nodemailer";
-import AppError from "../utils/error";
-import User from "./user.model";
+import AppError from "../../../src/module/utils/error";
+import User from "../../../src/module/authentication/user.model";
 import bcrypt from "bcryptjs";
-import BadRequestError from "../errors/api-errors/BadRequesterror";
+import BadRequestError from "../../../src/module/errors/api-errors/BadRequesterror";
 
 dotenv.config();
 const JWT_SECRET = "login";

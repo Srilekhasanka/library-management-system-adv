@@ -1,9 +1,9 @@
 import express, { Request, Response, NextFunction } from "express";
-import sequelize from "./config/db";
-import bookRoutes from "./module/books/book.routes";
-import authorRoutes from "./module/authors/author.routes";
-import publisherRoutes from "./module/publishers/publisher.routes";
-import authRoutes from "./module/authentication/auth.router";
+import sequelize from "../src/config/db";
+import bookRoutes from "../src/module/books/book.routes";
+import authorRoutes from "../src/module/authors/author.routes";
+import publisherRoutes from "../src/module/publishers/publisher.routes";
+import authRoutes from "../src/module/authentication/auth.router";
 
 const app = express();
 

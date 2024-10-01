@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 import { verifyToken } from "../authentication/auth.service";
-import User from "../authentication/user.model";
+import User from "../../../src/module/authentication/user.model";
 import jwt, { JwtPayload } from "jsonwebtoken";
 
 const JWT_SECRET = "login";

@@ -1,6 +1,6 @@
-import Book from "../books/book.model";
-import Authors from "../authors/author.model";
-import Publisher from "../publishers/publisher.model";
+import Book from "../../../src/module/books/book.model";
+import Authors from "../../../src/module/authors/author.model";
+import Publisher from "../../../src/module/publishers/publisher.model";
 
 // Define the types for book data
 interface BookData {

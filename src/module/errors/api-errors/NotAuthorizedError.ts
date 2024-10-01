@@ -1,4 +1,4 @@
-import { CustomApiError } from "./CustomApiError";
+import { CustomApiError } from "../api-errors/CustomApiError";
 
 export class NotAuthorizedError extends CustomApiError {
   public statusCode = 401; // Explicitly define the statusCode property

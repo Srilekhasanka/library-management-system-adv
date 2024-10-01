@@ -1,4 +1,4 @@
-import { CustomApiError } from "./CustomApiError";
+import { CustomApiError } from "../api-errors/CustomApiError";
 
 export class ValidationError extends CustomApiError {
   public statusCode = 400; // Corrected the status code to 400

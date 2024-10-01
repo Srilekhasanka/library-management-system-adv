@@ -1,7 +1,7 @@
 import { DataTypes, Model, Optional } from "sequelize";
-import sequelize from "../../config/db";
-import Authors from "../authors/author.model";
-import Publisher from "../publishers/publisher.model";
+import sequelize from "../../../src/config/db";
+import Authors from "../../../src/module/authors/author.model";
+import Publisher from "../../../src/module/publishers/publisher.model";
 
 // Define the attributes of the Book model
 interface BookAttributes {

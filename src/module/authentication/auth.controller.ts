@@ -1,16 +1,16 @@
 import { Request, Response, NextFunction } from "express";
-import User from "../authentication/user.model";
+import User from "../../../src/module/authentication/user.model";
 import {
   handleForgotPassword,
   resetPasswordService,
-} from "../authentication/auth.service";
+} from "../../../src/module/authentication/auth.service";
 import { isEmpty } from "../utils/obj.isEmpty";
 
 import {
   FORGOT_PASSWORD_MODEL,
   RESET_PASSWORD_MODEL,
-} from "../authentication/user.model";
-import AppError from "../utils/error";
+} from "../../../src/module/authentication/user.model";
+import AppError from "../../../src/module/utils/error";
 import jwt from "jsonwebtoken";
 
 export const register = async (

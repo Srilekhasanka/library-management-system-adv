@@ -1,6 +1,6 @@
 import express, { Request, Response } from "express";
-import PublisherController from "./publisher.controller";
-import { protect } from "../authentication/auth.middleware";
+import PublisherController from "../../../src/module/publishers/publisher.controller";
+import { protect } from "../../../src/module/authentication/auth.middleware";
 
 const router = express.Router();
 const publisherController = new PublisherController();
